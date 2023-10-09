@@ -88,7 +88,6 @@
     height: 31.25em;
     display: flex;
     justify-content: center;
-    background: seagreen;
 }
 
 .todo{
@@ -97,7 +96,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background: blue;
 }
 
 .objetivo .parraob{
@@ -106,7 +104,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: green;
 }
 
 .objetivo .parraob .obje{
@@ -114,7 +111,6 @@
     font-size: 20px;
     text-align: center;
     justify-content: center;
-
 }
 
 .objetivo .parraob .obje h2{
@@ -149,6 +145,28 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.objetivo .img1{
+    width: 40em;
+    height: 100%;
+    background-image: url(../img/Rectangle\ 25.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* responsive de portatil L */
+
+@media only screen and ( min-width: 1440px){}
+
+/* responsive de portatil */
+
+@media only screen and ( max-width: 1024px){
+    .objetivo .parraob .info p{
+        width: 80%;
+        font-size: 1.2em;
+    }
+}
+
 /* responsive de tableta */
 
 @media only screen and ( max-width: 768px){
@@ -170,6 +188,29 @@
     }
     .mision p{
         font-size: 0.9em;
+    }
+    .todo{
+        justify-content: center;
+    }
+
+    .objetivo .parraob{
+        width: 60%;
+    }
+
+    .objetivo .parraob .obje h2{
+        font-size: 1.6em;
+    }
+
+    .objetivo .parraob .info p{
+        width: 80%;
+        font-size: 1.4em;
+    }
+    .objetivo .img{
+        display: none;
+    }
+
+    .objetivo .img1{
+        display: none;
     }
 }
 
@@ -209,13 +250,28 @@
         font-size: 0.9em;
     }
 
-    .objetivo .parraob{
-        width: 80%;
+    .todo{
+        justify-content: center;
     }
 
+    .objetivo .parraob{
+        width: 90%;
+    }
+
+    .objetivo .parraob .obje h2{
+        font-size: 1.2em;
+    }
+
+    .objetivo .parraob .info p{
+        width: 80%;
+        font-size: 1em;
+    }
     .objetivo .img{
         display: none;
     }
 
-    
+    .objetivo .img1{
+        display: none;
+    }
+
 }
