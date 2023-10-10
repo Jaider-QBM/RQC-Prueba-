@@ -1,0 +1,110 @@
+:root{
+    --header: #010324;
+    --blanco: #ffff;
+    --button:#0066FF;
+    --gris: #7b7b7b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*=== Header - Encabezado === */
+header{
+    background: var(--header);
+    color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px ;
+}
+
+.title-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-logo img{
+    width: 3.5em;
+    height: 3em;
+}
+
+.title-logo h1{
+    font-weight: 100;
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+/* === Navegacion === */
+
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-bar li{
+    color: var(--blanco);
+    margin-left: 60px;
+    font-size: 1.2em;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.nav-bar li:hover{
+    border-bottom: 2px solid var(--blanco);
+}
+
+.nav-bar a{
+    color: var(--blanco);
+}
+
+.nav-bar .perfil{
+    margin-left: 10em;
+    cursor: pointer;
+    text-align: end;
+    width: 6em;
+}
+
+
+.perfil .submenu {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    float: left;
+    background-color: var(--header);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 6em;
+    border-radius: 0px 0px 0.5em 0.5em;
+}
+
+.submenu li{
+    margin: 0;
+    border-bottom: 2px solid transparent;
+    width: 90%;
+}
+
+
+.submenu li a{
+    font-size: 0.6em;
+}
+.perfil:hover .submenu {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* === Menu Hamburguesa === */
+.menu {
+    font-size: 1.3em;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+} 
