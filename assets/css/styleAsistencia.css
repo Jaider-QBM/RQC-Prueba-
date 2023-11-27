@@ -1,0 +1,164 @@
+:root{
+    --AzulOscuro: #010324;
+    --azul: #0066FF;
+    --blanco: white;
+    --gris:#01032496;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header ------------ Encabezado de la pagina-------*/
+header{
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--gris);
+    border-bottom: 1px solid var(--AzulOscuro);
+    border-radius: .5em;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+header.scrolled {
+    background-color: var(--AzulOscuro); /* Cambia este color según tus preferencias */
+}
+
+header .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.head .title-logo{
+    display: flex;
+    align-items: center;
+}
+
+.title-logo img{
+    width: 3.2em;
+    height: 3em;
+}
+
+.title-logo h1{
+    font-weight: 300;
+    font-size: 1.2em;
+    color: var(--blanco);
+    margin-left: 10px;
+}
+
+.head .nav-bar ul{
+    display: flex;
+    gap: 4em;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.nav-bar .op:hover,.op1:hover,.op2:hover, .op3:hover{
+    border-bottom: 2px solid var(--azul) ;
+}
+
+.abrirMenu, .cerrarMenu{
+    display: none;
+}
+
+/* ------------MAIN--------------Cuerpo de la pagina */
+
+.img-present{
+    height: 20em;
+    background-image:linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgb(0, 0, 0)
+    ), url(../img/comunidad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+    color: var(--blanco);
+}
+
+.img-present h1{
+    font-weight: 100;
+    padding: 1.2em;
+    font-size: 2.25em;
+}
+
+.curso{
+    background: green;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.curso .sc{
+    color: var(--AzulOscuro);
+    border-bottom: 2px solid var(--azul);
+    width: 20%;
+}
+
+.cursos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    justify-content: space-around;
+}
+
+.course{
+    width: 22.938em;
+    height: 4.875em;
+    display: flex;
+    border-radius: 16px;
+    margin-top: 1em;
+    border: 1px solid var(--header);
+    background: var(--header);
+}
+
+.course h2{
+    font-weight: 100;
+}
+
+.course h3{
+    font-weight: 100;
+}
+
+.course .name{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px 0px 0px 16px;
+    background: var(--AzulOscuro);
+    color: var(--blanco);
+}
+
+.course .dire{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--blanco);
+    padding: 0px 0px 0px 10px;
+}
+
+.course .total{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 16px 16px 0px;
+    background: var(--AzulOscuro);
+    color: var(--blanco);
+    font-size: 1.3em;
+}
